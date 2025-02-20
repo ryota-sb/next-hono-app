@@ -1,7 +1,7 @@
 import { createRoute, z } from '@hono/zod-openapi'
 import { BlogIdSchema, BlogSchema, BlogsSchema, CreateBlogSchema } from '../models/blogSchema'
 
-export const getBlogRoute = createRoute({
+export const getBlogsRoute = createRoute({
   path: '/',
   method: 'get',
   description: '全てのブログを取得',
